@@ -128,9 +128,9 @@ sed -i "s/192\.168\.[0-9]*\.[0-9]*/$WRT_IP/g" $CFG_FILE
 #修改默认主机名
 sed -i "s/hostname='.*'/hostname='$WRT_NAME'/g" $CFG_FILE
 
-echo "CONFIG_PACKAGE_luci-theme-argon=n" >> ./.config
-echo "CONFIG_PACKAGE_luci-app-argon-config=n" >> ./.config
-echo "CONFIG_PACKAGE_luci-theme-$WRT_THEME=y" >> ./.config
+#echo "CONFIG_PACKAGE_luci-theme-argon=n" >> ./.config
+#echo "CONFIG_PACKAGE_luci-app-argon-config=n" >> ./.config
+#echo "CONFIG_PACKAGE_luci-theme-$WRT_THEME=y" >> ./.config
 #echo "CONFIG_PACKAGE_luci-app-$WRT_THEME-config=y" >> ./.config
 
 #补齐依赖
@@ -176,8 +176,8 @@ provided_config_lines=(
 	"CONFIG_PACKAGE_luci-app-autoreboot=y"
 	"CONFIG_PACKAGE_luci-theme-kucat=y"
 	#删除插件
- 	#"CONFIG_PACKAGE_luci-app-argon-config=n"
- 	#"CONFIG_PACKAGE_luci-theme-argon=n"
+ 	"CONFIG_PACKAGE_luci-app-argon-config=n"
+ 	"CONFIG_PACKAGE_luci-theme-argon=n"
   	"CONFIG_PACKAGE_luci-i18n-argon-config-zh-cn=n"
 	"CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Haproxy=n"
 	"CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Hysteria=n"
