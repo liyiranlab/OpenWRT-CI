@@ -324,6 +324,7 @@ if [[ $WRT_CONFIG == *"NMODEM"* ]]; then
     provided_config_lines+=(
         "CONFIG_PACKAGE_luci-app-netdata=y"
         "CONFIG_PACKAGE_coreutils-timeout=y"
+	"CONFIG_PACKAGE_luci-app-cpufreq=y"
 	#"CONFIG_DEFAULT_automount=n"
   	#"CONFIG_MODULE_DEFAULT_automount=n"
 	#"CONFIG_DEFAULT_kmod-usb-dwc3=n"
