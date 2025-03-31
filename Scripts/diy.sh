@@ -171,7 +171,7 @@ provided_config_lines=(
 	#增加插件
 	"CONFIG_PACKAGE_luci-app-ramfree=y"
 	"CONFIG_PACKAGE_luci-app-smartdns=y"
-	"CONFIG_PACKAGE_luci-app-upnp=y"
+	#"CONFIG_PACKAGE_luci-app-upnp=y"
 	"CONFIG_PACKAGE_bind-dig=y"
 	"CONFIG_PACKAGE_luci-app-autoreboot=y"
 	"CONFIG_PACKAGE_luci-theme-kucat=y"
@@ -324,7 +324,7 @@ if [[ $WRT_CONFIG == *"NMODEM"* ]]; then
     provided_config_lines+=(
         "CONFIG_PACKAGE_luci-app-netdata=y"
         "CONFIG_PACKAGE_coreutils-timeout=y"
-	"CONFIG_PACKAGE_luci-app-cpufreq=y"
+	#"CONFIG_PACKAGE_luci-app-cpufreq=y"
 	#"CONFIG_DEFAULT_automount=n"
   	#"CONFIG_MODULE_DEFAULT_automount=n"
 	#"CONFIG_DEFAULT_kmod-usb-dwc3=n"
