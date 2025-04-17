@@ -423,6 +423,7 @@ if [[ $WRT_CONFIG == *"EMMC"* ]]; then
      	"CONFIG_PACKAGE_taskd=y"
      	"CONFIG_PACKAGE_luci-lib-taskd=y"
 	"CONFIG_PACKAGE_luci-lib-xterm=y"
+ 	"CONFIG_PACKAGE_luci-app-store=y"
     	"CONFIG_PACKAGE_luci-app-istorex=y"
     )
 fi
