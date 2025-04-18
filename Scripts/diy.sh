@@ -485,16 +485,17 @@ if [ -f ./package/luci-lib-taskd/Makefile ]; then
     sed -i 's/>=1\.0\.3-1/>=1\.0\.3-r1/g' ./package/luci-lib-taskd/Makefile
 fi
 if [ -f ./package/luci-app-openclash/Makefile ]; then
-    sed -i 's/PKG_RELEASE:=beta/PKG_RELEASE:=1/g' ./package/luci-app-openclash/Makefile
+    sed -i '/^PKG_VERSION:=/a PKG_RELEASE:=1' ./package/luci-app-openclash/Makefile
 fi
 if [ -f ./package/luci-app-quickstart/Makefile ]; then
-    sed -i 's/PKG_VERSION:=0\.8\.16-1/PKG_VERSION:=0\.8\.16/g' ./package/luci-app-quickstart/Makefile
-    sed -i 's/PKG_RELEASE:=$/PKG_RELEASE:=1/g' ./package/luci-app-quickstart/Makefile
+    # 把 PKG_VERSION:=x.y.z-n 拆成 PKG_VERSION:=x.y.z 和 PKG_RELEASE:=n
+    sed -i -E 's/PKG_VERSION:=([0-9]+\.[0-9]+\.[0-9]+)-([0-9]+)/PKG_VERSION:=\1\nPKG_RELEASE:=\2/' ./package/luci-app-quickstart/Makefile
 fi
 if [ -f ./package/luci-app-store/Makefile ]; then
-    sed -i 's/PKG_VERSION:=0\.1\.27-1/PKG_VERSION:=0\.1\.27/g' ./package/luci-app-store/Makefile
-    sed -i 's/PKG_RELEASE:=$/PKG_RELEASE:=1/g' ./package/luci-app-store/Makefile
+    # 把 PKG_VERSION:=x.y.z-n 拆成 PKG_VERSION:=x.y.z 和 PKG_RELEASE:=n
+    sed -i -E 's/PKG_VERSION:=([0-9]+\.[0-9]+\.[0-9]+)-([0-9]+)/PKG_VERSION:=\1\nPKG_RELEASE:=\2/' ./package/luci-app-store/Makefile
 fi
+
 
 if [ -d "package/vlmcsd" ]; then
     mkdir -p "package/vlmcsd/patches"
