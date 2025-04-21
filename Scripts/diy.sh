@@ -501,7 +501,6 @@ if [ -f ./package/luci-app-store/Makefile ]; then
     sed -i -E 's/PKG_VERSION:=([0-9]+\.[0-9]+\.[0-9]+)-([0-9]+)/PKG_VERSION:=\1\nPKG_RELEASE:=\2/' ./package/luci-app-store/Makefile
 fi
 
-
 if [ -d "package/vlmcsd" ]; then
     mkdir -p "package/vlmcsd/patches"
     cp -f "${GITHUB_WORKSPACE}/Scripts/001-fix_compile_with_ccache.patch" "package/vlmcsd/patches"
