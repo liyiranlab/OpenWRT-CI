@@ -426,7 +426,7 @@ if [[ $WRT_CONFIG == *"EMMC"* ]]; then
  	"CONFIG_PACKAGE_luci-app-store=y"
     	"CONFIG_PACKAGE_luci-app-istorex=y"
      	"CONFIG_PACKAGE_luci-app-samba4=y"
-      	"CONFIG_PACKAGE_luci-app-vlmcsd=y"
+      	#"CONFIG_PACKAGE_luci-app-vlmcsd=y"
        	"CONFIG_PACKAGE_luci-app-wol=y"
     )
 fi
