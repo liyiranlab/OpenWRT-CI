@@ -374,7 +374,7 @@ if [[ $WRT_CONFIG == *"NMODEM"* ]]; then
 	#"CONFIG_PACKAGE_luci-lua-runtime=y"
 	#"CONFIG_PACKAGE_luci-proto-bonding=y"
 	#"CONFIG_PACKAGE_luci-proto-relay=y"
-	"CONFIG_PACKAGE_mmc-utils=n"
+	#"CONFIG_PACKAGE_mmc-utils=n"
 	#"CONFIG_PACKAGE_nand-utils=y"
 	#"CONFIG_PACKAGE_openssh-sftp-server=y"
 	"CONFIG_PACKAGE_sfdisk=n"
