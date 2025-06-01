@@ -212,12 +212,6 @@ provided_config_lines=(
 	"CONFIG_PACKAGE_luci-app-fileassistant=n"
  	"CONFIG_PACKAGE_htop=n"
  	"CONFIG_PACKAGE_iperf3=n"
-	#参数调整
- 	#"CONFIG_CCACHE=y"
-	#"CONFIG_DEVEL=y"
-	#"CONFIG_TARGET_MULTI_PROFILE=y"
-	#"CONFIG_TARGET_PER_DEVICE_ROOTFS=y"
- 	#"CONFIG_TARGET_ROOTFS_INITRAMFS=n"
 	#内核调整
 	#"CONFIG_PACKAGE_kmod-dsa=y"
 	#"CONFIG_PACKAGE_kmod-fs-btrfs=y"
@@ -250,6 +244,8 @@ provided_config_lines=(
 	#"CONFIG_PACKAGE_kmod-usb-net-huawei-cdc-ncm=y"
 	#"CONFIG_PACKAGE_kmod-usb-net-ipheth=y"
 	#"CONFIG_PACKAGE_kmod-usb-net-qmi-wwan=y"
+	#"CONFIG_PACKAGE_kmod-usb-net-qmi-wwan-fibocom=y"
+	#"CONFIG_PACKAGE_kmod-usb-net-qmi-wwan-quectel=y"
 	#"CONFIG_PACKAGE_kmod-usb-net-rndis=y"
 	#"CONFIG_PACKAGE_kmod-usb-net-rtl8150=y"
 	#"CONFIG_PACKAGE_kmod-usb-net-rtl8152=y"
@@ -274,6 +270,7 @@ provided_config_lines=(
 	#"CONFIG_PACKAGE_htop=y"
 	#"CONFIG_PACKAGE_iperf3=y"
 	#"CONFIG_PACKAGE_ip-full=y"
+	#"CONFIG_PACKAGE_libimobiledevice=y"
 	#"CONFIG_PACKAGE_lsblk=y"
 	#"CONFIG_PACKAGE_luci-base=y"
 	#"CONFIG_PACKAGE_luci-compat=y"
@@ -287,6 +284,8 @@ provided_config_lines=(
 	#"CONFIG_PACKAGE_openssh-sftp-server=y"
 	#"CONFIG_PACKAGE_sfdisk=y"
 	#"CONFIG_PACKAGE_sgdisk=y"
+	#"CONFIG_PACKAGE_usbmuxd=y"
+	#"CONFIG_PACKAGE_usbutils=y"
 	)
 
 #[[ $WRT_CONFIG == *"WIFI-NO"* ]] && provided_config_lines+=("CONFIG_PACKAGE_hostapd-common=n" "CONFIG_PACKAGE_wpad-openssl=n")
@@ -340,6 +339,8 @@ if [[ $WRT_CONFIG == *"NMODEM"* ]]; then
 	"CONFIG_PACKAGE_kmod-usb-net-huawei-cdc-ncm=n"
 	"CONFIG_PACKAGE_kmod-usb-net-ipheth=n"
 	"CONFIG_PACKAGE_kmod-usb-net-qmi-wwan=n"
+	"CONFIG_PACKAGE_kmod-usb-net-qmi-wwan-fibocom=n"
+	"CONFIG_PACKAGE_kmod-usb-net-qmi-wwan-quectel=n"
 	"CONFIG_PACKAGE_kmod-usb-net-rndis=n"
 	"CONFIG_PACKAGE_kmod-usb-net-rtl8150=n"
 	"CONFIG_PACKAGE_kmod-usb-net-rtl8152=n"
@@ -349,7 +350,7 @@ if [[ $WRT_CONFIG == *"NMODEM"* ]]; then
 	"CONFIG_PACKAGE_kmod-usb-storage-uas=n"
 	"CONFIG_PACKAGE_kmod-usb-uhci=n"
 	"CONFIG_PACKAGE_kmod-usb-xhci=n"
-	"CONFIG_PACKAGE_kmod-wireguard=y"
+	#"CONFIG_PACKAGE_kmod-wireguard=y"
 	#组件调整
 	#"CONFIG_PACKAGE_autocore=y"
 	#"CONFIG_PACKAGE_automount=y"
@@ -361,9 +362,10 @@ if [[ $WRT_CONFIG == *"NMODEM"* ]]; then
 	#"CONFIG_PACKAGE_dmesg=y"
 	"CONFIG_PACKAGE_fdisk=n"
 	"CONFIG_PACKAGE_gdisk=n"
-	#"CONFIG_PACKAGE_htop=y"
-	#"CONFIG_PACKAGE_iperf3=y"
+	"CONFIG_PACKAGE_htop=n"
+	"CONFIG_PACKAGE_iperf3=n"
 	#"CONFIG_PACKAGE_ip-full=y"
+	#"CONFIG_PACKAGE_libimobiledevice=y"
 	#"CONFIG_PACKAGE_lsblk=y"
 	#"CONFIG_PACKAGE_luci-base=y"
 	#"CONFIG_PACKAGE_luci-compat=y"
@@ -377,6 +379,8 @@ if [[ $WRT_CONFIG == *"NMODEM"* ]]; then
 	#"CONFIG_PACKAGE_openssh-sftp-server=y"
 	"CONFIG_PACKAGE_sfdisk=n"
 	"CONFIG_PACKAGE_sgdisk=n"
+	"CONFIG_PACKAGE_usbmuxd=n"
+	"CONFIG_PACKAGE_usbutils=n"
     )
 fi
 
