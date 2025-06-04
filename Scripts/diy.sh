@@ -424,7 +424,11 @@ if [[ $WRT_CONFIG == *"EMMC"* ]]; then
 	"CONFIG_PACKAGE_luci-app-netspeedtest=y"
     )
 fi
-
+if [[ $WRT_CONFIG == *"MEDIATEK"* ]]; then
+    provided_config_lines+=(
+	"CONFIG_PACKAGE_luci-app-gecoosac=y"
+    )
+fi
 #[[ $WRT_CONFIG == "IPQ"* ]] && provided_config_lines+=("CONFIG_PACKAGE_sqm-scripts-nss=y" "CONFIG_PACKAGE_luci-app-sqm=y")
 #if [[ $WRT_TAG == "IPQ"* ]]; then
 #    provided_config_lines+=(
