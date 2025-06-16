@@ -421,7 +421,7 @@ if [[ $WRT_CONFIG == *"EMMC"* ]]; then
      	"CONFIG_PACKAGE_luci-app-samba4=y"
       	#"CONFIG_PACKAGE_luci-app-vlmcsd=y"
        	"CONFIG_PACKAGE_luci-app-wol=y"
-	"CONFIG_PACKAGE_luci-app-netspeedtest=y"
+	"CONFIG_PACKAGE_luci-app-netspeedtest=n"
     )
 fi
 if [[ $WRT_CONFIG == *"MEDIATEK"* ]]; then
