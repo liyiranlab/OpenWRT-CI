@@ -61,7 +61,7 @@ UPDATE_PACKAGE "luci-app-adguardhome" "ysuolmai/luci-app-adguardhome" "apk"
 UPDATE_PACKAGE "kucat-config" "sirpdboy/luci-app-kucat-config" "main"
 UPDATE_PACKAGE "advancedplus" "sirpdboy/luci-app-advancedplus" "main"
 #UPDATE_PACKAGE "luci-app-poweroff" "esirplayground/luci-app-poweroff" "master"
-UPDATE_PACKAGE "luci-app-ddns-go" "sirpdboy/luci-app-ddns-go" "main"
+#UPDATE_PACKAGE "luci-app-ddns-go" "sirpdboy/luci-app-ddns-go" "main"
 
 #small-package
 #UPDATE_PACKAGE "xray-core xray-plugin dns2tcp dns2socks haproxy hysteria \
