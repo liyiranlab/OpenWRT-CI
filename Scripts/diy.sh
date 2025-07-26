@@ -145,7 +145,7 @@ echo "CONFIG_PACKAGE_luci-i18n-argon-config-zh-cn=n" >> ./.config
 echo "CONFIG_PACKAGE_luci-app-argon-config=n" >> ./.config
 echo "CONFIG_PACKAGE_luci-theme-argon=n" >> ./.config
 echo "CONFIG_PACKAGE_luci-theme-$WRT_THEME=y" >> ./.config
-echo "CONFIG_PACKAGE_luci-app-advancedplus=y" >> ./.config
+#echo "CONFIG_PACKAGE_luci-app-advancedplus=y" >> ./.config
 #echo "CONFIG_PACKAGE_luci-app-$WRT_THEME=y" >> ./.config
 #echo "CONFIG_PACKAGE_luci-app-$WRT_THEME-config=y" >> ./.config
 
@@ -190,12 +190,12 @@ provided_config_lines=(
 	#"CONFIG_PACKAGE_luci-app-upnp=y"
 	"CONFIG_PACKAGE_bind-dig=y"
 	"CONFIG_PACKAGE_luci-app-autoreboot=y"
-	#"CONFIG_PACKAGE_luci-light=n"
 	#"CONFIG_PACKAGE_luci-app-argon-config=n"
  	#"CONFIG_PACKAGE_luci-i18n-argon-config-zh-cn=n"
 	#"CONFIG_PACKAGE_luci-theme-argon=n"
 	#"CONFIG_PACKAGE_luci-theme-kucat=y"
 	#"CONFIG_PACKAGE_luci-app-kucat=y"
+ 	"CONFIG_PACKAGE_luci-app-advancedplus=y"
 	#删除插件
  	#"CONFIG_PACKAGE_luci-app-argon-config=n"
  	#"CONFIG_PACKAGE_luci-i18n-argon-config-zh-cn=n"	
