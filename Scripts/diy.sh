@@ -145,8 +145,8 @@ echo "CONFIG_PACKAGE_luci-i18n-argon-config-zh-cn=n" >> ./.config
 echo "CONFIG_PACKAGE_luci-app-argon-config=n" >> ./.config
 echo "CONFIG_PACKAGE_luci-theme-argon=n" >> ./.config
 echo "CONFIG_PACKAGE_luci-theme-$WRT_THEME=y" >> ./.config
-#echo "CONFIG_PACKAGE_luci-app-$WRT_THEME=y" >> ./.config
 echo "CONFIG_PACKAGE_luci-app-advancedplus=y" >> ./.config
+#echo "CONFIG_PACKAGE_luci-app-$WRT_THEME=y" >> ./.config
 #echo "CONFIG_PACKAGE_luci-app-$WRT_THEME-config=y" >> ./.config
 
 #补齐依赖
