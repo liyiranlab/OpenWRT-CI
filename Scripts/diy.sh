@@ -190,6 +190,7 @@ provided_config_lines=(
 	#"CONFIG_PACKAGE_luci-app-upnp=y"
 	"CONFIG_PACKAGE_bind-dig=y"
 	"CONFIG_PACKAGE_luci-app-autoreboot=y"
+	"CONFIG_PACKAGE_luci-app-vnstat2=y"
 	#"CONFIG_PACKAGE_luci-app-argon-config=n"
  	#"CONFIG_PACKAGE_luci-i18n-argon-config-zh-cn=n"
 	#"CONFIG_PACKAGE_luci-theme-argon=n"
