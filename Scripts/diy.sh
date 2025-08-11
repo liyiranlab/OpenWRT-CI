@@ -89,8 +89,8 @@ UPDATE_PACKAGE	"taskd luci-lib-xterm luci-lib-taskd luci-app-store quickstart lu
 #mkdir -p parted && \
 #wget https://raw.githubusercontent.com/lisaac/luci-app-diskman/master/Parted.Makefile -O parted/Makefile
 
-
-
+# 删除特定的无线配置文件
+rm -f ./target/linux/qualcommax/base-files/etc/uci-defaults/990_set-wireless.sh
 
 #######################################
 #DIY Settings
