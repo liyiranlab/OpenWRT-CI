@@ -73,7 +73,7 @@ UPDATE_PACKAGE "advancedplus" "sirpdboy/luci-app-advancedplus" "main"
 #	taskd luci-lib-xterm luci-lib-taskd vlmcsd luci-app-vlmcsd\
 #	luci-theme-argon netdata luci-app-netdata  luci-app-cloudflarespeedtest \
 #	lucky luci-app-lucky luci-app-openclash mihomo  luci-app-mihomo luci-app-amlogic
-UPDATE_PACKAGE	"netdata luci-app-netdata taskd luci-lib-xterm luci-lib-taskd luci-app-store quickstart luci-app-quickstart luci-app-istorex oaf open-app-filter luci-app-oaf" \
+UPDATE_PACKAGE	"taskd luci-lib-xterm luci-lib-taskd luci-app-store quickstart luci-app-quickstart luci-app-istorex oaf open-app-filter luci-app-oaf" \
 	"kenzok8/small-package" "main" "pkg"
 
 #speedtest
