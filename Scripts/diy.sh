@@ -97,11 +97,11 @@ UPDATE_PACKAGE	"taskd luci-lib-xterm luci-lib-taskd luci-app-store quickstart lu
 #######################################
 #默认主题
 #WRT_THEME: argon
- #WRT_THEME="bootstrap"
+ WRT_THEME="bootstrap"
  #WRT_IP="192.168.10.1"
  WRT_NAME="RanWRT"
  WRT_SSID="AX"
- WRT_THEME="kucat"
+ #WRT_THEME="kucat"
 #修改默认主题
  sed -i "s/luci-theme-aurora/luci-theme-$WRT_THEME/g" $(find ./feeds/luci/collections/ -type f -name "Makefile")
 #修改immortalwrt.lan关联IP
@@ -142,7 +142,7 @@ sed -i "s/hostname='.*'/hostname='$WRT_NAME'/g" $CFG_FILE
 #sed -i '/CONFIG_PACKAGE_luci-light/d' ./.config
 #echo "CONFIG_PACKAGE_luci-light=n" >> ./.config
 echo "CONFIG_PACKAGE_luci-theme-$WRT_THEME=y" >> ./.config
-echo "CONFIG_PACKAGE_luci-app-$WRT_THEME=y" >> ./.config
+#echo "CONFIG_PACKAGE_luci-app-$WRT_THEME=y" >> ./.config
 echo "CONFIG_PACKAGE_luci-i18n-aurora-config-zh-cn=n" >> ./.config
 echo "CONFIG_PACKAGE_luci-app-aurora-config=n" >> ./.config
 echo "CONFIG_PACKAGE_luci-theme-aurora=n" >> ./.config
