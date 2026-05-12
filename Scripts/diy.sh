@@ -490,6 +490,7 @@ fi
 if [[ $WRT_CONFIG == "IPQ"* ]]; then
   #echo. "检测到 IPQ 平台，启用 SQM 配置..."
   provided_config_lines+=(
+  	"CONFIG_FEED_sqm_scripts_nss=y"
     "CONFIG_PACKAGE_sqm-scripts-nss=y"
     "CONFIG_PACKAGE_luci-app-sqm=y"
     # 依赖项
