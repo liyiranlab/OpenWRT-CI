@@ -58,7 +58,7 @@ UPDATE_PACKAGE() {
 #UPDATE_PACKAGE "vnt" "lmq8267/luci-app-vnt" "main"
 
 UPDATE_PACKAGE "luci-app-adguardhome" "ysuolmai/luci-app-adguardhome" "apk"
-UPDATE_PACKAGE "kucat-config" "sirpdboy/luci-app-kucat-config" "main"
+#UPDATE_PACKAGE "kucat-config" "sirpdboy/luci-app-kucat-config" "main"
 UPDATE_PACKAGE "advancedplus" "sirpdboy/luci-app-advancedplus" "main"
 UPDATE_PACKAGE "netdata" "xuanranran/openwrt-netdata" "main"
 # 更新 sqm-scripts-nss 包
