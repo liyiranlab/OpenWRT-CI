@@ -60,7 +60,7 @@ UPDATE_PACKAGE() {
 UPDATE_PACKAGE "luci-app-adguardhome" "ysuolmai/luci-app-adguardhome" "apk"
 #UPDATE_PACKAGE "kucat-config" "sirpdboy/luci-app-kucat-config" "main"
 UPDATE_PACKAGE "advancedplus" "sirpdboy/luci-app-advancedplus" "main"
-UPDATE_PACKAGE "netdata" "xuanranran/openwrt-netdata" "main"
+#UPDATE_PACKAGE "netdata" "xuanranran/openwrt-netdata" "main"
 # 更新 sqm-scripts-nss 包
 UPDATE_PACKAGE "sqm-scripts-nss" "qosmio/sqm-scripts-nss" "main"
 #UPDATE_PACKAGE "luci-app-poweroff" "esirplayground/luci-app-poweroff" "master"
@@ -76,7 +76,7 @@ UPDATE_PACKAGE "sqm-scripts-nss" "qosmio/sqm-scripts-nss" "main"
 #	taskd luci-lib-xterm luci-lib-taskd vlmcsd luci-app-vlmcsd\
 #	luci-theme-argon netdata luci-app-netdata  luci-app-cloudflarespeedtest \
 #	lucky luci-app-lucky luci-app-openclash mihomo  luci-app-mihomo luci-app-amlogic
-UPDATE_PACKAGE	"taskd luci-lib-xterm luci-lib-taskd luci-app-store quickstart luci-app-quickstart luci-app-istorex oaf open-app-filter luci-app-oaf" \
+UPDATE_PACKAGE	"netdata luci-app-netdata taskd luci-lib-xterm luci-lib-taskd luci-app-store quickstart luci-app-quickstart luci-app-istorex oaf open-app-filter luci-app-oaf" \
 	"kenzok8/small-package" "main" "pkg"
 
 #speedtest
