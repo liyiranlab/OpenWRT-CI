@@ -60,7 +60,6 @@ UPDATE_PACKAGE() {
 UPDATE_PACKAGE "luci-app-adguardhome" "ysuolmai/luci-app-adguardhome" "apk"
 #UPDATE_PACKAGE "kucat-config" "sirpdboy/luci-app-kucat-config" "main"
 UPDATE_PACKAGE "advancedplus" "sirpdboy/luci-app-advancedplus" "main"
-UPDATE_PACKAGE "netdata luci-app-netdata" "xuanranran/openwrt-netdata" "main"
 # 更新 sqm-scripts-nss 包
 UPDATE_PACKAGE "sqm-scripts-nss" "qosmio/sqm-scripts-nss" "main"
 #UPDATE_PACKAGE "luci-app-poweroff" "esirplayground/luci-app-poweroff" "master"
