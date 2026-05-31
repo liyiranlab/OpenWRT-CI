@@ -406,8 +406,9 @@ fi
 
 if [[ $WRT_CONFIG == *"NMODEM"* ]]; then
     provided_config_lines+=(
-        "CONFIG_PACKAGE_luci-app-netdata=y"
-        "CONFIG_PACKAGE_coreutils-timeout=y"
+		"CONFIG_PACKAGE_socat=n"
+        "CONFIG_PACKAGE_luci-app-netdata=n"
+        "CONFIG_PACKAGE_coreutils-timeout=n"
     )
 fi
 
