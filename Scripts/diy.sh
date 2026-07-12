@@ -224,6 +224,7 @@ provided_config_lines=(
 	"CONFIG_PACKAGE_luci-app-homeproxy=n"
 	"CONFIG_PACKAGE_luci-app-samba4=n"
 	"CONFIG_PACKAGE_luci-app-wolplus=n"
+	"CONFIG_PACKAGE_luci-app-wolultra=n"
 	"CONFIG_PACKAGE_luci-app-gecoosac=n"
 	"CONFIG_PACKAGE_luci-app-tailscale=n"
 	"CONFIG_PACKAGE_luci-app-wol=n"
