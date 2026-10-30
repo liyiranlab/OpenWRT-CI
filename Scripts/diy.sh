@@ -144,10 +144,10 @@ sed -i "s/hostname='.*'/hostname='$WRT_NAME'/g" $CFG_FILE
 #echo "CONFIG_PACKAGE_luci-app-$WRT_THEME-config=y" >> ./.config
 #sed -i '/CONFIG_PACKAGE_luci-light/d' ./.config
 #echo "CONFIG_PACKAGE_luci-light=n" >> ./.config
-echo "CONFIG_PACKAGE_luci-theme-$WRT_THEME=y" >> ./.config
+echo "CONFIG_PACKAGE_luci-theme-$WRT_THEME=n" >> ./.config
 #echo "CONFIG_PACKAGE_luci-app-$WRT_THEME=y" >> ./.config
-echo "CONFIG_PACKAGE_luci-i18n-aurora-config-zh-cn=n" >> ./.config
-echo "CONFIG_PACKAGE_luci-app-aurora-config=n" >> ./.config
+echo "CONFIG_PACKAGE_luci-i18n-$WRT_THEME-config-zh-cn=n" >> ./.config
+echo "CONFIG_PACKAGE_luci-app-$WRT_THEME-config=n" >> ./.config
 echo "CONFIG_PACKAGE_luci-theme-aurora=n" >> ./.config
 echo "CONFIG_PACKAGE_luci-i18n-argon-config-zh-cn=n" >> ./.config
 echo "CONFIG_PACKAGE_luci-app-argon-config=n" >> ./.config
